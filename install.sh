@@ -8,6 +8,7 @@ install() {
     local FILE_NAMES=(
         .bash_profile
         .bashrc
+        .gitconfig
         .tmux.conf
         .vimrc
     )

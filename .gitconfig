@@ -1,0 +1,9 @@
+[push]
+    default = simple
+[alias]
+    a  = add
+    ap = add -p
+    d  = diff
+    dc = diff --cached
+    s  = status
+    sb = status -sb
