@@ -10,7 +10,7 @@ __setup_path() {
     fi
 
     local PATH_NAMES=(
-	    "$HOME/.rvm/bin"
+        "$HOME/.rvm/bin"
         "$HOME/bin"
     )
 
