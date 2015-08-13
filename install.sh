@@ -9,6 +9,7 @@ install() {
         .applycolors.sh
         .bash_profile
         .bashrc
+        .config/subtle/subtle.rb
         .gitconfig
         .tmux.conf
         .vimrc
