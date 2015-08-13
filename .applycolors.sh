@@ -18,8 +18,6 @@ applycolors() {
     echo -en "\e]PDA87DB8"
     echo -en "\e]PE0383F5"
     echo -en "\e]PFFFFFFF"
-
-    clear
 }
 
 [[ $(tty) =~ ^\/dev\/tty[0-9]+$ ]] && applycolors
