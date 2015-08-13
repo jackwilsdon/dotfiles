@@ -58,3 +58,5 @@ PROMPT_COMMAND=$(__get_prompt_command)
 alias "ls"="ls --color=auto"
 alias "l"="ls -lh"
 alias "la"="ls -lah"
+
+export rvmsudo_secure_path=1
