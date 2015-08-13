@@ -29,6 +29,8 @@ install() {
         if [ -f "${DESTINATION}" ]; then
             echo "File already exists at ${DESTINATION}"
         else
+            mkdir -p "$(dirname "${DESTINATION}")"
+
             ln -s "${FILE_DIRECTORY}" "${DESTINATION}"
             echo "Installing ${FILE_NAME} to ${DESTINATION}"
         fi
