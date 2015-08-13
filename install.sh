@@ -6,7 +6,6 @@ install() {
     local DIRECTORY_PATH="$(dirname "${SCRIPT_PATH}")"
 
     local FILE_NAMES=(
-        .applycolors.sh
         .bash_profile
         .bashrc
         .config/subtle/subtle.rb
