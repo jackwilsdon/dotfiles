@@ -9,6 +9,7 @@ install() {
         .bash_profile
         .bashrc
         .config/subtle/subtle.rb
+        .git-prompt.sh
         .gitconfig
         .tmux.conf
         .vimrc

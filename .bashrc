@@ -24,6 +24,7 @@ __setup_path() {
 __source_files() {
     local FILE_NAMES=(
         "$HOME/.rvm/scripts/rvm"
+        "$HOME/.git-prompt.sh"
     )
 
     for name in "${FILE_NAMES[@]}"; do
