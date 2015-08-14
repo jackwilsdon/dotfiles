@@ -11,6 +11,7 @@ install() {
         .config/subtle/subtle.rb
         .git-prompt.sh
         .gitconfig
+        .ssh/config
         .tmux.conf
         .vimrc
     )
