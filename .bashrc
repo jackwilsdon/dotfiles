@@ -60,3 +60,6 @@ alias "l"="ls -lh"
 alias "la"="ls -lah"
 
 export rvmsudo_secure_path=1
+
+export EDITOR="vim"
+export VISUAL="${EDITOR}"
