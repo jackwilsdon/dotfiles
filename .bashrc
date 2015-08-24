@@ -23,6 +23,7 @@ __setup_path() {
 
 __source_files() {
     local FILE_NAMES=(
+        "/etc/profile.d/bash_completion.sh"
         "$HOME/.rvm/scripts/rvm"
         "$HOME/.git-prompt.sh"
     )
