@@ -10,6 +10,8 @@ __setup_path() {
     fi
 
     local PATH_NAMES=(
+        "$HOME/Development/Programs/Android/SDK/tools"
+        "$HOME/Development/Programs/Android/SDK/platform-tools"
         "$HOME/.rvm/bin"
         "$HOME/bin"
     )
