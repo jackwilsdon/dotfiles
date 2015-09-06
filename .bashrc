@@ -12,6 +12,7 @@ __setup_path() {
     local PATH_NAMES=(
         "$HOME/Development/Programs/Android/SDK/tools"
         "$HOME/Development/Programs/Android/SDK/platform-tools"
+        "$HOME/Development/Programs/Android/adb-sync"
         "$HOME/.rvm/bin"
         "$HOME/bin"
     )
