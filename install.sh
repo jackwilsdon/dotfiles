@@ -8,6 +8,7 @@ install() {
     local FILE_NAMES=(
         .bash_profile
         .bashrc
+        .config/beets/config.yaml
         .config/subtle/subtle.rb
         .git-prompt.sh
         .gitconfig

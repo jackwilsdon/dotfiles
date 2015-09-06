@@ -1,0 +1,17 @@
+directory: ~/Music
+
+plugins: convert fetchart embedart
+
+convert:
+  tmpdir: ~/.config/beets/tmp
+  embed: no
+  max_bitrate: 320
+  never_convert_lossy_files: yes
+
+fetchart:
+  minWidth: 500
+  maxWidth: 1024
+  enforce_ratio: yes
+
+embedart:
+  maxwidth: 1024
