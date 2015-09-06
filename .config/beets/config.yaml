@@ -15,3 +15,4 @@ fetchart:
 
 embedart:
   maxwidth: 1024
+  remove_art_file: yes
