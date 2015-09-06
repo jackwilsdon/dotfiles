@@ -9,6 +9,12 @@ ignore() {
 
     git update-index --assume-unchanged ${DOTFILES[*]}
 
+    local PLURAL="dotfile"
+
+    [ ${#DOTFILES[*]} -eq 1 ] || PLURAL="${PLURAL}s"
+
+    echo "Ignored ${#DOTFILES[*]} ${PLURAL}"
+
     unset DOTFILES
 }
 

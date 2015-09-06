@@ -9,6 +9,12 @@ unignore() {
 
     git update-index --no-assume-unchanged ${DOTFILES[*]}
 
+    local PLURAL="dotfile"
+
+    [ ${#DOTFILES[*]} -eq 1 ] || PLURAL="${PLURAL}s"
+
+    echo "Un-ignored ${#DOTFILES[*]} ${PLURAL}"
+
     unset DOTFILES
 }
 
