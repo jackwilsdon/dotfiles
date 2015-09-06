@@ -5,22 +5,10 @@ install() {
     local SCRIPT_NAME="$(basename "${SCRIPT_PATH}")"
     local DIRECTORY_PATH="$(dirname "${SCRIPT_PATH}")"
 
-    local FILE_NAMES=(
-        .bash_profile
-        .bashrc
-        .config/beets/config.yaml
-        .config/subtle/subtle.rb
-        .git-prompt.sh
-        .gitconfig
-        .ssh/config
-        .tmux.conf
-        .vimrc
-    )
-
-    shopt -s nullglob
+    source "${DIRECTORY_PATH}/dotfiles.sh"
 
     local FILE_NAME
-    for FILE_NAME in "${FILE_NAMES[@]}"; do
+    for FILE_NAME in "${DOTFILES[@]}"; do
         local FILE_DIRECTORY="${DIRECTORY_PATH}/${FILE_NAME}"
         local DESTINATION="${HOME}/${FILE_NAME}"
 
@@ -39,7 +27,7 @@ install() {
         fi
     done
 
-    shopt -u nullglob
+    unset DOTFILES
 }
 
 install

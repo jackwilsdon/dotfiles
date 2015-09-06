@@ -1,0 +1,9 @@
+.bash_profile
+.bashrc
+.config/beets/config.yaml
+.config/subtle/subtle.rb
+.git-prompt.sh
+.gitconfig
+.ssh/config
+.tmux.conf
+.vimrc
