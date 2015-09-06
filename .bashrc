@@ -15,6 +15,7 @@ __setup_path() {
         "$HOME/Development/Programs/Android/adb-sync"
         "$HOME/.rvm/bin"
         "$HOME/bin"
+        "/usr/local/heroku/bin"
     )
 
     for name in "${PATH_NAMES[@]}"; do
