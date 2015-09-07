@@ -1,6 +1,6 @@
 directory: ~/Music
 
-plugins: convert fetchart embedart
+plugins: info convert fetchart embedart missing
 
 convert:
   max_bitrate: 320
