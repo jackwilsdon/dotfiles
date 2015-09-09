@@ -16,6 +16,8 @@ __setup_path() {
         "$HOME/.rvm/bin"
         "$HOME/bin"
         "/usr/local/heroku/bin"
+
+        "/Library/Frameworks/Python.framework/Versions/2.7/bin"
     )
 
     for name in "${PATH_NAMES[@]}"; do
