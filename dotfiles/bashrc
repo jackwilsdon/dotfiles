@@ -15,8 +15,11 @@ __setup_path() {
         "$HOME/Development/Programs/Android/adb-sync"
         "$HOME/.rvm/bin"
         "$HOME/bin"
-        "/usr/local/heroku/bin"
+        "$HOME/Applications/git-annex.app/Contents/MacOS"
+        "$HOME/Applications/Atom.app/Contents/Resources/app"
+        "$HOME/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 
+        "/usr/local/heroku/bin"
         "/Library/Frameworks/Python.framework/Versions/2.7/bin"
     )
 
