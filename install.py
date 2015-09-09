@@ -13,6 +13,7 @@ for key in data:
 
 variables = os.environ
 successes = 0
+skipped = 0
 failures = 0
 
 for current_dotfile in dotfiles:
@@ -26,20 +27,22 @@ for current_dotfile in dotfiles:
     joined_destination = os.path.join('~', relative_destination)
 
     success = current_dotfile.link(variables)
-    color = Fore.GREEN if success else Fore.RED
 
     if success:
         successes += 1
+        color = Fore.GREEN
+    elif not current_dotfile.does_apply():
+        skipped += 1
+        color = Fore.YELLOW
     else:
         failures += 1
+        color = Fore.RED
 
     print(joined_source + color + ' -> ' + Fore.RESET + joined_destination)
 #    print(dotfile.link(os.environ))
 
 print('-' * 10)
 print(Fore.GREEN + str(successes) + Fore.RESET + ' successes')
+print(Fore.YELLOW + str(skipped) + Fore.RESET + ' skipped')
 print(Fore.RED + str(failures) + Fore.RESET + ' failures')
 print('-' * 10)
-
-if failures > 0:
-    print(Fore.YELLOW + 'Check if the the failed already exist and try again')
