@@ -14,7 +14,7 @@ __setup_path() {
         "$HOME/Development/Programs/Android/SDK/platform-tools"
         "$HOME/Development/Programs/Android/adb-sync"
         "$HOME/.rvm/bin"
-        "$HOME/bin"
+        "$HOME/.bin"
         "$HOME/Applications/git-annex.app/Contents/MacOS"
         "$HOME/Applications/Atom.app/Contents/Resources/app"
         "$HOME/Applications/Sublime Text.app/Contents/SharedSupport/bin"
@@ -64,6 +64,10 @@ __prompt_command() {
     else
         export PS1="${PREFIX}${SUFFIX}"
     fi
+}
+
+reload_bashrc() {
+  source "${HOME}/.bashrc"
 }
 
 __setup_path
