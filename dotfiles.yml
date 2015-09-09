@@ -1,0 +1,9 @@
+dotfiles:
+  dotfiles/beets/config.yaml: .config/beets/config.yaml
+  dotifles/ssh/config: .ssh/config
+  dotfiles/bash_profile: .bash_profile
+  dotfiles/bashrc: .bashrc
+  dotfiles/git-prompt.sh: .git-prompt.sh
+  dotfiles/gitconfig: .gitconfig
+  dotfiles/tmux.conf: .tmux.conf
+  dotfiles/vimrc: .vimrc
