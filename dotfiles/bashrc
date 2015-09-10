@@ -13,6 +13,7 @@ __setup_path() {
         "$HOME/Development/Programs/Android/SDK/tools"
         "$HOME/Development/Programs/Android/SDK/platform-tools"
         "$HOME/Development/Programs/Android/adb-sync"
+        "$HOME/.npm_packages/bin"
         "$HOME/.rvm/bin"
         "$HOME/.bin"
         "$HOME/Applications/git-annex.app/Contents/MacOS"
